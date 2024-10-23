@@ -15,9 +15,11 @@ public class Main {
         System.out.print("Enter an artist name: ");
         String name = scanner.nextLine();
         Artist artist = service.getArtist(name);
-        System.out.println(artist.getName());
-        System.out.println("Number of followers: " + artist.getFollowers());
-        System.out.println("Genres: " + artist.getGenres());
+        System.out.println("Number of followers: " + artist.getFollowers().getTotal());
+        System.out.println("Genres: " );
+        for(String strings : artist.getGenres()) {
+            System.out.print(strings + ", ");
+        }
 
     }
 }
