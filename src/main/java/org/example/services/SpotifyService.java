@@ -14,9 +14,9 @@ import java.net.URI;
 
 public class SpotifyService {
 
-    // private final String API_URL = "https://api.spotify.com/v1/search?q=artist:";
-    private final String CLIENT_ID = "YOUR CLIENT ID HERE";
-    private final String CLIENT_SECRET = "YOUR CLIENT SECRET HERE";
+    private final String API_URL = "https://api.spotify.com/v1/search?q=artist:";
+    private final String CLIENT_ID = "e6571bd6cc124701a8684ff14a9c84d3";
+    private final String CLIENT_SECRET = "c35e67c99a954bf0ab3befd6c5767eff";
 
     SpotifyApi spotifyApi = new SpotifyApi.Builder()
             .setClientId(CLIENT_ID)
@@ -53,6 +53,5 @@ public class SpotifyService {
             throw new RuntimeException(e);
         }
     }
-
-
 }
+
